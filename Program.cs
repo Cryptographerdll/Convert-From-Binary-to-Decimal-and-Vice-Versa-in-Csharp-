@@ -29,7 +29,7 @@ namespace Decimal_To_Binary_Vice_Versa
 
             while (index > 0)
             {
-                Binary += Convert.ToInt32(Number_Input.Substring(index - 1, 1));
+                Binary = Convert.ToInt32(Number_Input.Substring(index - 1, 1));
                 Decimal += Binary * Multiplier;
                 index--;
                 Multiplier *= 2;
